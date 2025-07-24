@@ -3,7 +3,7 @@ export default function Footer() {
         <footer>
             <div>
                 <h3 className="text-center">LINK UTILI</h3>
-                <div className="d-flex justify-content-between align-items-center my-3 mx-3">
+                <div className="d-flex justify-content-around align-items-center my-3 mx-3">
 
                     <ul className="list-unstyled">
                         <li>
