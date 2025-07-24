@@ -18,7 +18,7 @@ export default function ProductPage() {
 
         <main className="pb-2">
             <h2 className="text-center fs-1 pt-5">I NOSTRI PRODOTTI</h2>
-            <div className="row row-cols-1 row-cols-md-2 g-4 my-5 mx-2">
+            <div className="row row-cols-1 row-cols-lg-2 g-4 my-5 mx-2">
 
                 {products.length && products.map(product => {
                     return (
@@ -31,7 +31,7 @@ export default function ProductPage() {
                                     <p>{`Categoria: ${product.category}`}</p>
                                     <p>{`Nome Prodotto: ${product.title.toUpperCase()}`}</p>
                                     <p>{`Prezzo: $${product.price.toFixed(2)}`}</p>
-                                    <p className="">{`Valutazione: ⭐${product.rating.rate}`}</p>
+                                    <p className="">{`Valutazione: ⭐ ${product.rating.rate}`}</p>
                                     <p>{`Acquistate: ${product.rating.count}`}</p>
                                 </div>
                             </div>
