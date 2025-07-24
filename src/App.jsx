@@ -1,11 +1,29 @@
-import * as bootstrap from 'bootstrap'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Homepage from './pages/Homepage';
+import ProductPage from './pages/ProductsPage';
+import AboutUsPage from './pages/AboutUsPage';
+import DefaultLayout from './components/layouts/DefaultLayout';
 
 function App() {
 
 
   return (
     <>
+      <BrowserRouter>
 
+        <Routes>
+
+          <Route Component={DefaultLayout}>
+
+            <Route index Component={Homepage} />
+            <Route path='/products' Component={ProductPage} />
+            <Route path='/about' Component={AboutUsPage} />
+
+          </Route>
+
+        </Routes>
+
+      </BrowserRouter>
     </>
   )
 }
@@ -24,5 +42,5 @@ Prodotti (pagina che mostrerà la lista dei prodotti prendendoli da https://fake
 Implementiamo una Navbar visibile in tutte le pagine per navigare tra di esse
 Bonus
 Centralizziamo la Navbar usando un componente Layout
-Gestiamo la classe active per i link attivi nella Navbar
+Gestiamo la classNamee active per i link attivi nella Navbar
 */
