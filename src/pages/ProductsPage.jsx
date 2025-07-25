@@ -23,7 +23,7 @@ export default function ProductPage() {
                 {products.length && products.map(product => {
                     return (
                         <div className="col" key={product.id}>
-                            <Link to={`/products/${product.id}`}>
+                            <Link className="link-underline link-underline-opacity-0" to={`/products/${product.id}`}>
                                 <div className="card h-100 text-center">
                                     <figure className="card-img-top text-center">
                                         <img src={product.image} alt={product.title} className="img-fluid pt-5" style={{ width: '200px' }} />
@@ -34,7 +34,6 @@ export default function ProductPage() {
                                         <p>{`Prezzo: $${product.price.toFixed(2)}`}</p>
                                         <p className="">{`Valutazione: ⭐ ${product.rating.rate}`}</p>
                                         <p>{`Acquistati: ${product.rating.count}`}</p>
-                                        {/* <Link className="btn" to={`/products/${id}`}>Visualizza prodotto</Link> */}
                                     </div>
                                 </div>
                             </Link>
@@ -48,3 +47,14 @@ export default function ProductPage() {
 
     )
 }
+
+/*
+Bonus
+
+-Aggiungiamo nella pagina di dettaglio dei pulsanti per navigare al prodotto precedente o successivo (usando useNavigate() programmaticamente)
+
+-Gestire la pagina 404 - create un componente 404 e usatelo nella rotta catch all
+
+-getire lo stato di caricamento della pagina mentre aspettiamo la risposta alla chiamata ajax
+
+*/
