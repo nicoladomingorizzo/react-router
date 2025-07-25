@@ -8,7 +8,7 @@ export default function Homepage() {
             <p className="mt-2 pb-5 px-2 text-center fs-4">
                 Siamo felici di averti qui!
                 Scopri le ultime tendenze della moda, selezionate con cura per offrirti stile, qualità e convenienza in ogni acquisto. Che tu stia cercando un look casual, elegante o qualcosa di unico, abbiamo quello che fa per te.
-                Dai un’occhiata alle nostre nuove collezioni e lasciati ispirare!
+                Dai un’occhiata alle nostre nuove ahahah collezioni e lasciati ispirare!
                 Buono shopping! 🛍️</p>
 
         </main>
