@@ -22,7 +22,7 @@ function App() {
             <Route path='/about' Component={AboutUsPage} />
             <Route path='/products/:id' Component={ProductDetail} />
           </Route>
-          <Route path='files/*' Component={NotFound} />
+          <Route path='/files/*' Component={NotFound} />
 
         </Routes>
 
