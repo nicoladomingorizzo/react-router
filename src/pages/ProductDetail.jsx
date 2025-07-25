@@ -27,8 +27,8 @@ export default function ProductDetail() {
                         <button className="btn btn-outline-dark text-right" onClick={e => { navigate('/products') }}>X</button>
                     </div>
                     <div className="d-flex justify-content-around gap-3">
-                        <button className="btn btn-outline-dark text-right" onClick={e => { navigate(`/products/${parseInt(product.id - 1)}`) }}>Predecente</button>
-                        <button className="btn btn-outline-dark text-right" onClick={e => { navigate(`/products/${parseInt(product.id + 1)}`) }}>Successivo</button>
+                        <button className='btn btn-outline-dark text-right' disabled={product.id === 1} onClick={e => { navigate(`/products/${parseInt(product.id - 1)}`) }}>Predecente</button>
+                        <button className={`btn btn-outline-dark text-right`} disabled={product.id === 20} onClick={e => { navigate(`/products/${parseInt(product.id + 1)}`) }}>Successivo</button>
                     </div>
                     <p className="mt-3 fw-bold">{`Nome Prodotto: ${product?.title?.toUpperCase()}`}</p>
                     <div>
